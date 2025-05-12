@@ -13,9 +13,9 @@ class ConfigManager {
 
     public function loadConfig(string $filePath): void {
         if (file_exists($filePath)) {
-            $this->config = new Config($filePath, Config::YAML);
+            $this->config = new Config($filePath, Config::JSON);
         } else {
-            $this->config = new Config($filePath, Config::YAML, [
+            $this->config = new Config($filePath, Config::JSON, [
                 "welcome_message" => "Welcome to the server, {player}! There are currently {online} players online."
             ]);
             $this->saveConfig($filePath);
