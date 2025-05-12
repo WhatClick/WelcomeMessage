@@ -1,0 +1,13 @@
+name: WelcomeMessage
+author: WhatClick
+
+version: 0.0.1
+main: WelcomeMessage\Main
+api-version: 5.0.0
+
+description: A plugin that displays a customizable welcome message to players when they join the server.
+
+license: MIT
+
+dependencies:
+  - pocketmine/pocketmine-api: ^5.0.0
